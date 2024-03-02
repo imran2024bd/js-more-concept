@@ -29,3 +29,36 @@ function checkAge(){
     }
     console.log(111);
 }
+
+
+
+
+/* 35-8 Error Handling: Try, Catch, Throw And Finally 
+**************     *summary*   *****************
+ try...catch
+
+ 01. The try statement defines a code block to run ( to try)
+ 02. The catch statement defines a code block to any error
+  
+ try {
+    block of code to try
+ }
+
+ catch(err){
+    Block of cpde to handle errors
+ }
+*/
+const n= 100 , d = 10;
+
+try{
+    console.log(n/d);
+    // forgot to define variable a
+    console.log(a);
+}
+
+catch(error){
+    console.log('ERROR message :' + error);
+}
+// ***OUTPUT****
+// 10 try-catch.js:54:13
+// ERROR message :ReferenceError: a is not defined
